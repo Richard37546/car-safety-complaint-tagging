@@ -1,0 +1,39 @@
+### model
+model_name_or_path: /data/syl/QwenQwen2.5_3B_Instruct
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+
+### dataset
+dataset_dir: /data/syl/LlamaFactory-main/data
+dataset: llm_review_car_safety_train
+eval_dataset: llm_review_car_safety_dev
+template: qwen
+cutoff_len: 1024
+overwrite_cache: true
+preprocessing_num_workers: 4
+
+### output
+output_dir: /data/syl/lora_QwenQwen2.5_3B_Instruct/lora_model
+logging_steps: 10
+save_steps: 100
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+fp16: true
+
+### eval
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 100

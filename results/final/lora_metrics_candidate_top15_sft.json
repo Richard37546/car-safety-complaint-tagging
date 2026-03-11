@@ -1,0 +1,13 @@
+{
+  "n_samples": 117,
+  "bad_pred_count": 0,
+  "bad_gold_count": 0,
+  "Count Accuracy": 0.74359,
+  "F1_level1": 0.707904,
+  "F1_level1_5": 0.646048,
+  "F1_level2": 0.501718,
+  "Weighted Tag Score": 0.586254,
+  "Hierarchical Consistency": 0.890313,
+  "Problem Exact Match": 0.440252,
+  "Complaint Exact Match": 0.42735
+}
