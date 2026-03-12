@@ -291,6 +291,11 @@ baseline 推理脚本
   当前方案已经验证了“检索候选标签 + 受限选择”的有效性，后续可以继续增强检索、排序和结构化解码能力。
 
 
+## 13. Model
+
+Fine-tuned LoRA weights are available on Hugging Face:
+
+https://huggingface.co/Richard37546/car-safety-complaint-lora
 
 
 
